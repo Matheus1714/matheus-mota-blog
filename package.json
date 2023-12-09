@@ -14,12 +14,13 @@
     "start": "astro dev"
   },
   "dependencies": {
+    "@astrojs/preact": "^3.0.1",
     "@astrojs/react": "^3.0.6",
     "@astrojs/tailwind": "^5.0.2",
     "@iconify/react": "^4.1.1",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
-    "astro": "^4.0.0",
+    "astro": "^4.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.294.0",

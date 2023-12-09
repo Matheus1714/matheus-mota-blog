@@ -3,18 +3,23 @@ import HeadSEO from '@/components/HeadSEO.astro'
 import Footer from '@/components/Footer.astro'
 import Header from '@/components/Header.astro'
 
+interface Image{
+  url: URL
+  alt: string
+}
+
 interface Props {
   title?: string | undefined
   description?: string | undefined
-  ogImage?: URL | undefined
+  image?: Image | undefined
 }
 
-const { title, description, ogImage } = Astro.props
+const { title, description, image } = Astro.props
 ---
 
 <html lang="en">
   <head>
-    <HeadSEO title={title} description={description} ogImage={ogImage} />
+    <HeadSEO title={title} description={description} image={image} />
   </head>
   <body class="min-h-screen bg-background font-sans antialiased">
     <div class="relative flex min-h-screen flex-col">
