@@ -1,0 +1,10 @@
+---
+const { url, icon:Icon } = Astro.props
+---
+
+<a 
+    href={url} 
+    class="hover:bg-accent hover:text-accent-foreground p-3 rounded-full flex justify-center justify-items-center"
+>
+    <Icon size={24}/>
+</a>

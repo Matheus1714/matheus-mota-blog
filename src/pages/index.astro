@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { buttonVariants } from '@/components/ui/button'
+---
+
+<BaseLayout
+  title="Matheus Mota"
+  description="Blog developed by Matheus Mota"
+>
+  <section class="container grid grid-cols-1 md:grid-cols-2 gap-8 pb-8 pt-6 md:py-10">
+
+    <div class="col-span-1 md:col-span-1 flex justify-center">
+      <img class="rounded h-max" src="https://github.com/Matheus1714.png" alt="">
+    </div>
+
+    <div class="col-span-1 md:col-span-1 flex flex-col items-start gap-2">
+      <h1
+        class="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl"
+      >
+        Hello Developer!
+      </h1>
+      <p class="max-w-[700px] text-lg text-muted-foreground">
+        Welcome to my blog! <br class="hidden sm:inline" />
+        I'm Matheus, and if this is your first time here, I extend a warm welcome to you! This platform serves as my creative space for crafting posts and engaging in discussions about coding. Feel free to explore, share your thoughts, and join the conversation on all things code-related. I hope you find inspiration and valuable insights during your time here. Good reading! 🚀
+      </p>
+    </div>
+  </section>
+</BaseLayout>

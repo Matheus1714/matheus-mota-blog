@@ -1,0 +1,67 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+
+import Card from '../../components/Card.astro'
+
+const cards = [
+  {
+    id: 1,
+    title: "my title",
+    description: "my description asldjasld asldjasd asldk jalskd alsd ajsdalsjdhsak dhashkjd jksda kdhjkas dhkjasd akhjsd hkajsdaksj dhaksjd asdjkh aksdjhas dkjsah dk",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+  {
+    id: 2,
+    title: "my title",
+    description: "my asdlkj asldkj asdl asldja sldasld ajlsdkjals dk description asldjasld asldjasd asldk jalskd alsd ajsdalsjdhsak dhashkjd jksda kdhjkas dhkjasd akhjsd hkajsdaksj dhaksjd asdjkh aksdjhas dkjsah dk",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+  {
+    id: 3,
+    title: "my title",
+    description: "my description asldjasld asldjasd asldk jalskd alsd ajsdalsjdhsak dhashkjd jksda kdhjkas dhkjasd akhjsd hkajsdaksj dhaksjd asdjkh aksdjhas dkjsah dk",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+  {
+    id: 4,
+    title: "my title",
+    description: "my descr",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+  {
+    id: 5,
+    title: "my title",
+    description: "my description asldjasld asldjasd asldk jalskd alsd ajsdalsjdhsak dhashkjd jksda kdhjkas dhkjasd akhjsd hkajsdaksj dhaksjd asdjkh aksdjhas dkjsah dk",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+  {
+    id: 6,
+    title: "my title",
+    description: "my description asldjasld asldjasd asldk jalskd alsd ajsdalsjdhsak dhashkjd jksda kdhjkas dhkjasd akhjsd hkajsdaksj dhaksjd asdjkh aksdjhas dkjsah dk",
+    imagePath: "https://fastly.picsum.photos/id/353/200/200.jpg?hmac=0pI-jYBxEC3AHp_0G8YowhiQRtQdv6u1Kfvuf0c9VNQ",
+    tags: ["asdlj", "adlasd", "as", "asdasdasdasd", "s"],
+    postDate: "23 Ago"
+  },
+]
+---
+
+<BaseLayout
+  title="Matheus Mota | Posts"
+  description="Blog developed by Matheus Mota"
+>
+  <section class="container grid grid-cols-1 md:grid-cols-4 gap-4 pb-8 pt-6">
+    {cards.map(card => (
+      <Card key={card.id} {...card} />
+    ))}
+  </section>
+</BaseLayout>

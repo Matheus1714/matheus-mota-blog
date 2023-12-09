@@ -1,0 +1,15 @@
+---
+import Social from "./Social.astro";
+import { FaGithub, FaMedium, FaTwitter, FaLinkedin } from "react-icons/fa";
+---
+
+<footer class="border-t py-6 md:px-8 md:py-0">
+  <div
+    class="container flex flex-row items-center justify-center gap-4 md:h-24 md:flex-row"
+  >
+    <Social url='https://github.com/Matheus7114' icon = {FaGithub} />
+    <Social url='https://medium.com/@matheus1714' icon = {FaMedium} />
+    <Social url='https://twitter.com/Matheus74220753' icon = {FaTwitter} />
+    <Social url='https://www.linkedin.com/in/matheus-mota-44b21a17b/' icon = {FaLinkedin} />
+  </div>
+</footer>
